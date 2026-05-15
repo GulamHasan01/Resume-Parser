@@ -5,11 +5,13 @@ node_modules/
 dist/
 build/
 
-# Local settings and secrets
+# Local settings and secrets (but allow .example files)
 local.settings.json
-*.env
-*.env.local
 .env
+.env.local
+.env.*
+!.env.example
+secrets.json
 
 # IDEs
 .idea/
